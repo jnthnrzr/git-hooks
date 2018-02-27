@@ -9,15 +9,15 @@ set -e
 cd "${0%/*}/.."
 
 # let's fake failing test for now
-echo "Running tests"
-echo "............................."
-# echo "Failed!" && exit 1
+echo "Running tests ............................."
 
 # example of commands for different languages
-# eslint .          # JS code quality check
-# npm test .        # JS unit tests
-# flake8 .          # python code quality check
-# nosetests         # python nose
+# eslint .                              # JS code quality check
+# npm test .                            # JS unit tests
+# flake8 .                              # python code quality check
+# nosetests                             # python nose
+# python3 -m unittest discover          # python unittest discovery
+# pytest                                # python py.test
+
 # just put your usual test command here
 python3 -m unittest discover
-# pytest
